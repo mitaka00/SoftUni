@@ -18,20 +18,20 @@ namespace Equal_Sums
 
             for (int i = 0; i < numbers.Length; i++)
             {
-                leftsum = FindLeftSum(numbers,i);
+                leftsum = FindLeftSum(numbers, i);
                 rightsum = FindRightSum(numbers, i);
 
-                if(leftsum==rightsum)
+                if (leftsum == rightsum)
                 {
                     index = i;
                 }
             }
 
-            if(index==-1)
+            if (index == -1)
             {
                 Console.WriteLine("no");
             }
-            
+
             else
             {
                 Console.WriteLine(index);
@@ -42,7 +42,7 @@ namespace Equal_Sums
         {
             var rightSum = 0;
 
-            for (int j = i+1; j < numbers.Length; j++)
+            for (int j = i + 1; j < numbers.Length; j++)
             {
                 rightSum += numbers[j];
             }
@@ -50,11 +50,11 @@ namespace Equal_Sums
             return rightSum;
         }
 
-        static int FindLeftSum(int[] numbers,int i)
+        static int FindLeftSum(int[] numbers, int i)
         {
             var leftsum = 0;
 
-            for (int j = 0; j <i ; j++)
+            for (int j = 0; j < i; j++)
             {
                 leftsum += numbers[j];
             }

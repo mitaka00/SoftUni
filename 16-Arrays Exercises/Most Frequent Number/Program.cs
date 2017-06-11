@@ -10,25 +10,31 @@ namespace Most_Frequent_Number
     {
         static void Main(string[] args)
         {
-            int[] numbers = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            int[] arr = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
 
-            int count = 1;
-            int currentIndex = 0;
-            for (int i = 1; i < numbers.Length; i++)
+            var index = 0;
+            var eqalNumbers = 1;
+            var maxEqualNumbers = 0;
+
+            for (int i = 0; i < arr.Length; i++)
             {
-                if (numbers[i] == numbers[currentIndex])
-                    count++;
-                else
-                    count--;
-                if (count == 0)
+                for (int j = i + 1; j < arr.Length; j++)
                 {
-                    currentIndex = i;
-                    count = 1;
+                    if (arr[i] == arr[j])
+                    {
+                        eqalNumbers++;
+                        if (maxEqualNumbers < eqalNumbers)
+                        {
+                            index = i;
+                        }
+                    }
+                    else
+                    {
+                        eqalNumbers = 1;
+                    }
                 }
             }
-
-            int mostFreq = numbers[currentIndex];
-            Console.WriteLine(numbers[currentIndex]);
+            Console.WriteLine(arr[index]);
         }
     }
 }
