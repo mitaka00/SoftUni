@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Average Grades", "Average G
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book Library", "Book Library\Book Library.csproj", "{49EF918A-448B-484A-8FBB-98FEB8A0EB9B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book Library Motification", "Book Library Motification\Book Library Motification.csproj", "{58378551-9CB9-4BDD-A3D0-3C740D0AA97C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{49EF918A-448B-484A-8FBB-98FEB8A0EB9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49EF918A-448B-484A-8FBB-98FEB8A0EB9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49EF918A-448B-484A-8FBB-98FEB8A0EB9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58378551-9CB9-4BDD-A3D0-3C740D0AA97C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58378551-9CB9-4BDD-A3D0-3C740D0AA97C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58378551-9CB9-4BDD-A3D0-3C740D0AA97C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58378551-9CB9-4BDD-A3D0-3C740D0AA97C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
