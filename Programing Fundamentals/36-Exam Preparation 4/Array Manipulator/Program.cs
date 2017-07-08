@@ -95,7 +95,7 @@ namespace Array_Manipulator
                     }
                 }
             }
-
+            result.Reverse();
             Console.WriteLine($"[{string.Join(", ", result)}]");
         }
 
