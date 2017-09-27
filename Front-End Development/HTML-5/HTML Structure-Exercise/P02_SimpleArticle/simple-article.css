@@ -1,0 +1,28 @@
+body{
+    font-family: sans-serif;
+}
+article{
+    width: 550px;
+    border-radius: 15px;
+    padding: 25px;
+    background: #fafafa;
+    box-shadow: 10px 11px 35px -14px rgba(0,0,0,0.54);
+    text-align: center;
+}
+h1{
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+img{
+    width: 200px;
+    border-radius: 50%;
+    border: 5px dotted #8b603d;
+    margin: 15px;
+    float: left;
+}
+p{
+    font-size: 14px;
+    text-align: justify;
+}

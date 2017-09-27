@@ -1,0 +1,25 @@
+body{
+    font-family: sans-serif;
+}
+main{
+    margin: 50px 20px;
+    max-width: 1060px;
+    padding: 0px 10px;
+}
+main img{
+    width: 180px;
+    height: 100px;
+    float: left;
+    margin: 10px 50px 0 0;
+}
+main h2{
+    color: #234465;
+    margin: 10px;
+}
+main p{
+    font-size: 16px;
+    color: #333;
+    width: 800px;
+    letter-spacing: 0px;
+    margin-bottom: 5px;
+}
