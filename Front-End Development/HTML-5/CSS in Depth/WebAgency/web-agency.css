@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    background-color: #24437C;
+    color: #ffffff;
+}
+header ul{
+    float: right;
+    margin-right: 10px;
+}
+header ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+nav ul li:last-of-type a{
+    border:  1px solid #3DC1EF;
+    background: #3DC1EF;
+    border-radius: 5px;
+    width: 15px;
+}
+header ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+nav li:first-letter{
+    text-transform: uppercase;
+}
+nav img{
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-top: 60px;
+    word-spacing: 10px;
+    font-weight: lighter;
+}
+.header-subtitle{
+    text-align: center;
+    font-size: 25px;
+    color: #507C9B;
+    margin-top: 10px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+#button-container{
+    border: 1px solid #3DC1EF;
+    background: #3DC1EF;
+    width: 90px;
+    border-radius: 10px;
+    text-align: center;
+    height: 25px;
+    text-transform: capitalize;
+    margin: auto;
+}
+.service{
+    display: inline-block;
+    width: 25%;
+    padding: 40px;
+}
+.header-services{
+    margin-left: 8%;
+    margin-top: 50px;
+}
+.service h2{
+    width: 200px;
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 50px;
+}
+.service-link{
+    display: block;
+    margin-top: 30px;
+}
+
