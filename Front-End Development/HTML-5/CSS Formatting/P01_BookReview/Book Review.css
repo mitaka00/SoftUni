@@ -1,0 +1,153 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    Background: linear-gradient(to bottom, #567788 0%,#121f25 100%) no-repeat center center;
+    font-family: 'Open Sans', sans-serif;
+    font-size:  14px;
+    color: #333333;
+}
+nav{
+    Background: #eff4f7;
+    Margin: 40px;
+    Position: Relative;
+    Z-Index: 5;
+    Height: 80px;
+}
+header nav ul li a{
+    Color: #a4a8a9;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    Cursor: Pointer;
+    border-bottom: #70e9ff;
+    Color: #333;
+
+}
+header nav ul li{
+    Display: inline-block;
+    Margin-Right: 20px;
+    padding-bottom: 23px;
+    list-style: none;
+}
+header nav ul{
+    Padding: 20px 20px 0 20px;
+    Float: Right;
+}
+header section{
+    Position: Absolute;
+    z-index: 0;
+    Top: 20px;
+    Left: 550px;
+    Background: #ea3d51;
+    Width: 90px;
+    Height: 90px;
+    Padding: 20px;
+}
+header section h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    Font-weight: 900;
+    letter-spacing: 10px;
+    Color: #ffffff;
+    margin-top: 72px;
+}
+main{
+    background: #CBD0D9;
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 10%;
+
+}
+.book-title{
+    Position: relative;
+    z-index: 10;
+    Color: #121f25;
+    font-size: 54px;
+    Margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+.book-genre{
+    Position: relative;
+    z-index: 3;
+    Top: -80px;
+    Left: 80px;
+    Color: #6dffb8;
+    font-size: 120px;
+    Margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+.advertisement{
+    Position: Relative;
+    z-index: 8;
+    margin: auto;
+    Color: #ffffff;
+    Width: 300px;
+    Padding: 40px;
+    text-align: center;
+    Background: linear-gradient(to bottom, #eb3c53 0%, #e6135c 100%) no-repeat center center;
+}
+.advertisement img{
+    Display: Block;
+    margin: auto;
+    Width: 100%;
+    max-width: 80px;
+    border-radius: 50%;
+}
+.advertisement .info:before,.advertisement .info:after{
+    Content: ' " ';
+    Color: #af213d;
+    font-size: 30px;
+    font-weight: 800;
+}
+.stars{
+    margin: 10px;
+    font-size: 25px;
+}
+.advertisement button{
+    Background: None;
+    Border: 3px solid #70ecff;
+    text-transform: uppercase;
+    font-size: 12px;
+    Color: #ffffff;
+    Padding: 10px 25px;
+}
+.advertisement button:hover{
+    Background: #70ecff;
+    border: #70ecff;
+    Color: #348098;
+}
+.book-content{
+    Position: Relative;
+    z-index: 4;
+    Top: -250px;
+    Background: #ffffff;
+    Margin: 50px;
+    Padding: 250px 35px 35px 35px;
+}
+.book-content h1{
+    Color: #46ee97;
+    font-size: 42px;
+}
+.book-content p{
+    width: 70%;
+}
+.book-content button{
+    Background: None;
+    Border: 3px solid #628291;
+    text-transform: uppercase;
+    font-size: 12px;
+    Color: #333;
+    Padding: 10px 25px;
+}
+.book-content button:hover{
+    Background: #628291;
+    Cursor: Pointer;
+    Color: #6dffb8;
+
+}
