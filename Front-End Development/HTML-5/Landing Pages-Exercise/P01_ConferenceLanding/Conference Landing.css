@@ -1,0 +1,290 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,900');
+
+body{
+    font-family:Roboto, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background:linear-gradient(rgba(0,0,0, 0.6),rgba(0,0,0, 0.6)),url(../img/header-bg.png) no-repeat center;
+    background-size: cover;
+    background-position: top;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: #ffffff;
+    padding: 30px 20px 0;
+}
+.theme{
+    margin: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+nav{
+    float: right;
+    margin-top: 25px;
+
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+    letter-spacing: 2px;
+}
+nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color:  #fa692e;
+    cursor: pointer;
+}
+.header-h1-wrapper{
+    margin-top: 200px;
+    text-align: center;
+}
+header h1{
+    display: inline-block;
+    width: 500px;
+    margin-right: 80px;
+    font-weight:100;
+    text-align: left;
+}
+header div h1 span{
+    font-weight: normal;
+}
+.header-h1-wrapper i:hover{
+    color:  #fa692e;
+    cursor: pointer;
+}
+.header-articles{
+    margin-top: 50px;
+    margin-left: 2.5%;
+    height: 200px;
+}
+.header-articles article{
+    display: inline-block;
+    width: 22%;
+    margin-right: 2.5%;
+    vertical-align: top;
+    height: 100%;
+}
+.header-articles .header-symbol{
+    margin-bottom: 70px;
+}
+header div article:hover{
+    cursor: pointer;
+    border-bottom:5px solid #fa692e;
+}
+#words{
+    background-color: #ffffff;
+    margin-left: 25%;
+    text-align: left;
+    margin-top: 5px;
+}
+#words div{
+    display: inline-block;
+    vertical-align: top;
+}
+#quote{
+    width: 200px;
+    margin-right: 50px;
+    padding-top: 120px;
+    text-align: right;
+}
+#quote p{
+    margin-top: 50px;
+    text-transform: capitalize;
+}
+#description{
+    width: 260px;
+    margin-right: 50px;
+    padding-top: 50px;
+}
+#description p{
+    padding-bottom: 35px;
+    border-bottom: 1px solid #cccccc;
+}
+#words img{
+    padding-top: 50px;
+    height: 300px;
+    z-index: 1;
+    position: absolute;
+}
+#orange-box{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background-color: #fa692e;
+    opacity: 0.8;
+    z-index: 2;
+   right: 0;
+}
+#schedule{
+    background-color: #3c3f49;
+    color: #ffffff;
+
+}
+#schedule h2{
+    padding-top: 60px;
+    width: 400px;
+    margin-left: 80px;
+}
+#schedule ul{
+    padding-left: 20px;
+    list-style: none;
+    margin-left: 95px;
+    margin-top: 150px;
+}
+#schedule ul li{
+    display: inline-block;
+    width: 45%;
+    margin-bottom: 80px;
+}
+#schedule ul li span{
+    color: gray;
+    text-transform: capitalize;
+    margin-left: 20px;
+    font-weight: lighter;
+}
+#schedule ul li i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fa692e;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 30px;
+}
+#speakers{
+    background-color: #ffffff;
+}
+#speakers>div{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+#speakers div h1{
+    width: 300px;
+    display: inline-block;
+    margin-right: 50px;
+}
+#speakers div p{
+    display: inline-block;
+    width: 530px;
+}
+#speakers ul{
+    margin-left: 130px;
+    list-style: none;
+}
+#speakers ul li{
+    display: inline-block;
+    margin-right: 45px;
+    margin-bottom: 30px;
+    width: 300px;
+    height: 400px;
+    background-color: #FAFAFA;
+    box-shadow: 10px 10px 15px -5px rgba(0,0,0,0.25);
+}
+#speakers ul li p{
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+#speakers ul li p i:hover{
+    color: #fa692e;
+    cursor: pointer;
+}
+#speakers ul li h3{
+    color: #fa692e;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+#events{
+    background-color: #3c3f49;
+    height: 650px;
+    width: 100%;
+    position: absolute;
+}
+#events>form{
+    border: 1px solid #cccccc;
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    margin: 5% 15%;
+}
+#events h2{
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    margin-top: 10%;
+    letter-spacing: 1px;
+    font-size: 50px;
+}
+#events p{
+    color: white;
+    width: 350px;
+    text-align: center;
+    margin: auto;
+}
+#events div{
+    margin:50px 0;
+}
+#events form div input{
+    border: none;
+    border-bottom: 5px solid #fa692e;
+    margin-right: 30px;
+    background: none;
+}
+::-webkit-input-placeholder {
+    color: #eeeeee;
+    font-size: 1.2em;
+}
+#events form div button{
+    border: none;
+    padding: 10px 25px;
+    background-color: #fa692e;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 18px;
+    margin-left: 40px;
+}
+#events form div button:hover{
+    background-color: black;
+    cursor: pointer;
+}
+footer{
+    position: absolute;
+    bottom: -453%;
+    background-color: #292A2F;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+}
+footer span{
+    float: left;
+    color: white;
+    margin-left: 5px;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 60px;
+}
+footer p{
+    float: right;
+    width: 250px;
+    color: grey;
+    text-transform: uppercase;
+    display: inline-block;
+}
