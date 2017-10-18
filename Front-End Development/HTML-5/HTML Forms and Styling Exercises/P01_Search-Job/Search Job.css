@@ -1,0 +1,69 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    Text-size: 14px;
+    Font-Family: Tahoma, Helvetica, sans-serif;
+    Padding: 80px 50px;
+}
+nav{
+    background-color:#384452;;
+    Width: 70%;
+}
+ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-table;
+    padding: 25px;
+}
+nav ul li a{
+    text-decoration: none;
+    Margin-Left: 15px;
+    Color: #8BAEC2;
+}
+li:hover {
+    background-color: #3BBC96;
+}
+
+li:hover a {
+    color: #ffffff;
+}
+main{
+    width: 70%;
+    Display: flex;
+    Flex-Wrap: wrap;
+    background-color: #EEEEEE;
+}
+label{
+    color: #374574;
+    display: block;
+    font-weight: bold;
+    width: 165px;
+    margin-left: 38px;
+    margin-top: 20px;
+}
+input{
+    border: 1px solid #CDCDCD;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 46px;
+    padding-left: 14px;
+    width: 90%;
+}
+button {
+    margin-left: 38px;
+    width: 190px;
+    height: 46px;
+    text-transform: uppercase;
+    background-color: #384452;
+    color: #CED1CA;
+}
+
+button:hover {
+    background-color: #3BBC96;
+    color: #FFF7E4;
+    cursor: pointer;
+}

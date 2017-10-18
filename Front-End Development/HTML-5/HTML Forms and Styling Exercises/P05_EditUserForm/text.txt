@@ -1,0 +1,29 @@
+Edit User Form
+
+edit user
+
+Username 
+
+Email
+
+Phone number
+
+User type
+ Broadband
+ Radio
+
+Change Password
+
+Groups
+ All groups
+ Group 1
+ Group 2
+ Group 3
+ Group 4
+
+
+Contacts
+See Contacts list 
+
+CANCEL
+SAVE
