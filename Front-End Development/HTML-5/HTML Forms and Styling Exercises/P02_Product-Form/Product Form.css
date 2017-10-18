@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 14px;
+    font-family:'Lato', sans-serif;
+    background-color: #fafafa;
+}
+form{
+    width: 70%;
+    margin: 50px auto;
+    height: 500px;
+    color: #565656;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #42CACA;
+    overflow: hidden;
+}
+div{
+    Background: linear-gradient(to bottom, #6afdc9 0%,#42c9ca 100%);
+    display: flex;
+    float: left;
+    height: 100%;
+    width: 50%;
+    margin-right: 30px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+h1{
+    margin-top: 50px;
+    color: black;
+    font-family: 'Anton' ,sans-serif;
+}
+h2{
+    color: black;
+    margin-top: 30px;
+    font-family: 'Anton' ,sans-serif;
+}
+label,input,button,select{
+    display: block;
+    margin-top: 20px;
+}
+select{
+    box-sizing: border-box;
+    width: 200px;
+    height: 30px;
+    background-color: #3BBC96;
+    color: #ffffff;
+    padding-left: 5px;
+    margin-left: 15px;
+    display: block;
+}
+input{
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 3px solid #3BBC96;
+    padding-bottom: 4px;
+    outline: none;
+}
+input::-webkit-input-placeholder{
+    color: #3BBC96;
+    padding-left: 5px;
+}
+button{
+    margin-top: 50px;
+    border: 2px solid #3BBC96;
+    color:#3BBC96;
+    background:#ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    width: 140px;
+    height: 30px;
+    border-radius: 10px;
+}
+button:hover{
+    color:#ffffff;
+    background:#3BBC96;
+    cursor: pointer;
+}
+
