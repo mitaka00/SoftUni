@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    font-family: "Roboto", Helvetica, sans-serif;
+    color: #1E1917;;
+}
+#wrapper{
+    background-color: lightgray;
+    margin: 50px auto;
+    width: 80%;
+    padding-top: 10px;
+}
+h1{
+    text-transform: uppercase;
+    margin: 30px auto;
+    width: 90%;
+    height: 80px;
+    padding-left: 10px;
+    font-size: 40px;
+    line-height: 80px;
+    border-top: 6px solid #324E5A;
+    border-right: 5px solid #324E5A;
+    color: #324E5A;
+    background-color: #ffffff;
+}
+label{
+    display: block;
+    margin-left:6%;
+}
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=tel] {
+    width: 60%;
+    box-sizing: border-box;
+    height: 30px;
+    border-top: 4px solid #324E5A;
+    border-left: 4px solid #324E5A;
+    margin-bottom: 10px;
+    margin-left:6%;
+}
+label[for=broadband],
+label[for=radio] {
+    display: inline;
+    width: 10px;
+    margin-right: 60px;
+}
+input[type=radio]{
+    margin-left: 6%;
+    margin-right: -60px;
+}
+#groups{
+    width: 60%;
+    box-sizing: border-box;
+    border-top: 4px solid #324E5A;
+    border-left: 4px solid #324E5A;
+    margin-bottom: 10px;
+    margin-left:6%;
+    background-color: #ffffff;
+}
+#groups label{
+    margin-left: 5px;
+    margin-top: 10px;
+}
+a{
+    display: block;
+    color: #3BBC96;
+    margin-left: 6%;
+}
+button {
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    background: none;
+}
+
+button:first-of-type {
+    margin-left: 60px;
+    color: #FF5428;
+    border-bottom: 3px solid #FF5428;
+    border-right: 3px solid #FF5428;
+}
+
+button:first-of-type:hover {
+    background-color: #FF5428;
+    cursor: pointer;
+    color: white;
+}
+
+button:last-of-type {
+    margin-left: 30px;
+    color: #136F64;
+    border-bottom: 3px solid #136F64;
+    border-right: 3px solid #136F64;
+}
+
+button:last-of-type:hover {
+    background-color: #136F64;
+    cursor: pointer;
+    color: white;
+}
