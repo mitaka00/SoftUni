@@ -1,0 +1,99 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,900');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(#13343E,#646C73);
+}
+form{
+    background-color: #FAFAFA;
+    width: 80%;
+    margin: 50px auto;
+    height: 500px;
+}
+aside{
+    float: left;
+    width: 45%;
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+}
+img{
+    width: 70%;
+    height: 106%;
+}
+#wrapper{
+    display: inline-block;
+    width: 55%;
+    height: 100%;
+}
+#info{
+    width: 100%;
+    height: 80%;
+    margin-top: 50px;
+}
+h1{
+    float: right;
+    text-transform: uppercase;
+    color: #9B9B9B;
+    text-align: right;
+    font-size: 37px;
+    margin-right: 50px;
+}
+h2{
+    color: #717171;
+    text-align: right;
+    float: right;
+    font-size: 35px;
+    font-weight: 900;
+    margin-right: 50px;
+    margin-bottom: 120px;
+    display: block;
+}
+#left-side{
+    display: inline-block;
+    width: 33%;
+    margin-right: 4%;
+    margin-top: 100px;
+}
+#right-side{
+    display: inline-block;
+    width: 33%;
+    margin-top: 100px;
+}
+input{
+    border: none;
+    border-bottom: 2px solid #13343E;
+    width: 100%;
+    background: none;
+    outline: none;
+    height: 50px;
+}
+input::-webkit-input-placeholder{
+    padding-left: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    bottom: 20px;
+}
+.awesome-input{
+    position: relative;
+}
+.fa{
+    position: absolute;
+    top: 24px;
+    left: 5px;
+    font-size: 24px;
+}
+button{
+    float: right;
+    margin-right: 80px;
+    text-transform: uppercase;
+    background-color: #13343E;
+    color: #ffffff;
+    height: 40px;
+    border-radius: 20px;
+    width: 120px;
+    border:none;
+}
