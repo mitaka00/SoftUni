@@ -1,0 +1,40 @@
+@media all and (max-width: 480px){
+    .header-wrapper{
+        width: 100%;
+        padding: 0;
+    }
+    header .logo-image-container{
+        text-align: center;
+        background-color: #424244;
+        flex-basis: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .top-button{
+        display: none;
+    }
+    .header-subtitle{
+        display: none;
+    }
+    .wrapper{
+        flex-wrap: wrap;
+    }
+    .service-container{
+        flex-basis: 100%;
+    }
+    .travel-title-container{
+        width: 100%;
+    }
+    footer{
+        height: 150px;
+    }
+    footer .logo-image-container{
+        width: 100%;
+        text-align: center;
+    }
+    .footer-list{
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+}

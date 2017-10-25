@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Lato, sans-serif;
+}
+header{
+    margin: auto;
+    text-align: center;
+    padding: 0px 10px;
+    background:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/background.jpg") no-repeat center center;
+    background-size: cover;
+    height: 700px;
+}
+header img{
+    display: inline-block;
+    float: left;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+header nav{
+    display: inline-block;
+    float: right;
+}
+header nav ul{
+    list-style: none;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+header nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+header h1{
+    text-align: center;
+    display: block;
+    color: #FFFFFF;
+    padding-top: 300px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 50px;
+}
+header h3{
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-top: 10px;
+}
+#offers{
+    background-color: #F5F5F5;
+}
+#offers h1{
+    text-align: center;
+    padding-top: 40px;
+}
+#offers > p{
+    text-align: center;
+    color: #828587;
+}
+#sections{
+    width: 80%;
+    margin: 30px auto;
+}
+#sections section{
+    width: 32%;
+    margin-right: 1%;
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    height: 400px;
+}
+#sections section img{
+    height: 90%;
+    width: 100%;
+    display: inline-block;
+}
+#sections section h6{
+    display: inline-block;
+    float: left;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+#sections section p{
+    display: inline-block;
+    float: right;
+    margin-top: 5px;
+    margin-right: 20px;
+    font-size: 17px;
+}
+#customers h1{
+    padding-top: 40px;
+    text-align: center;
+    font-weight: 400;
+}
+#customers > p{
+    text-align: center;
+    color: #828587;
+}
+#customers #customer-sections{
+    margin: 40px auto;
+    width: 70%;
+}
+#customers #customer-sections section{
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    margin-right:1%;
+}
+.image-box{
+    margin: 10px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: #FAFAFA;
+    display: flex;
+}
+.image-box img{
+    border-radius: 100%;
+    flex-basis: 90%;
+}
+#customers #customer-sections section h4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+#customers #customer-sections section p{
+    color: #828587;
+    font-style: italic;
+}
+footer p{
+    display: inline-block;
+    float: left;
+    color: #828587;
+    margin-left: 250px;
+}
+footer ul{
+    float: right;
+    list-style: none;
+    margin-right: 250px;
+    display: inline-block;
+}
+footer ul li{
+    display: inline-block;
+    margin-left: 20px;
+    color: #828587;;
+}
