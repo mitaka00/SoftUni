@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+}
+#wrapper{
+    margin: 10px auto;
+    width: 60%;
+}
+h1{
+    text-align: center;
+}
+#wrapper>p{
+    text-align: center;
+    width: 85%;
+    margin: 20px auto;
+    color: #828587;
+}
+#sections{
+    width: 100%;
+    margin-top: 20px;
+}
+section{
+    display: inline-block;
+    margin: 20px;
+    width: 20%;
+    text-align: center;
+}
+img{
+    width: 100%;
+    height: 60%;
+}
+.star{
+    margin-top: 20px;
+    color: darkorange;
+    font-size: 15px;
+}
+h4{
+    font-weight: 600;
+}
+.small{
+    font-size: 8px;
+    color: #828587;
+    font-weight: bold;
+    margin-top: -15px;
+}
+h5{
+    font-size: 13px;
+}

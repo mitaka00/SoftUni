@@ -1,0 +1,92 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+body{
+    font-family: Lato, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+form{
+    width: 90%;
+    margin: 40px auto;
+}
+#form-wrapper{
+    width: 60%;
+    display: inline-block;
+    float: left;
+    margin-right: 15%;
+}
+#info-wrapper{
+    width: 25%;
+    display: inline-block;
+}
+h1{
+    font-weight: 900;
+}
+#form-wrapper > p{
+    font-size: 14px;
+    color:lightgray;
+}
+.input-wrapper{
+    display: inline-block;
+    width: 47%;
+    margin-bottom: 15px;
+}
+.input-wrapper:nth-of-type(1),.input-wrapper:nth-of-type(3){
+    margin-right: 5%;
+}
+.input-wrapper input{
+    width: 100%;
+    display: block;
+    height: 20px;
+    margin-top: 2px;
+}
+.input-wrapper label{
+    color:lightgray;
+}
+.input-wrapper:nth-of-type(5){
+    width: 100%;
+}
+textarea{
+    width: 100%;
+    margin-top: 2px;
+}
+button{
+    background-color: darkorange;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    width: 130px;
+    height: 45px;
+    border: none;
+    border-radius: 2px;
+}
+.info-wrapper-parts{
+    position: relative;
+}
+.info-wrapper-parts h3{
+    border-bottom: 2px solid gainsboro;
+    width: 60%;
+
+}
+.info-wrapper-parts p{
+    margin-left: 20px;
+}
+.info-wrapper-parts:nth-of-type(1)> i{
+    position: relative;
+    top: -70px;
+    color: blue;
+}
+.info-wrapper-parts:nth-of-type(2)> i{
+    position: relative;
+    top: -36px;
+    color: blue;
+}
+.info-wrapper-parts:nth-of-type(3)> i{
+    position: relative;
+    top: -55px;
+    color: blue;
+}
+.info-wrapper-parts:nth-of-type(4)> i{
+    position: relative;
+    top: -107px;
+    color: blue;
+}
