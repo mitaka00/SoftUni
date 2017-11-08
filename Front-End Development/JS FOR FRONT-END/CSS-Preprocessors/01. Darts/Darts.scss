@@ -1,0 +1,64 @@
+$blue: #0000ff;
+$red: #FF0000;
+$green: #ADFF2F;
+$yellow: #FFFF00;
+$brown: #A52A2A;
+
+@mixin default-border(){
+  border-radius: 100%;
+  color: #fff;
+  position: absolute;
+}
+.darts{
+  position: relative;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  span{
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  .brown-circle{
+    @include default-border;
+    background-color: $brown;
+    width: 500px;
+    height: 500px;
+  }
+  .blue-circle{
+    @include default-border;
+    background-color: $blue;
+    width: 400px;
+    height: 400px;
+    left: calc(50% - 200px);
+    top: calc(50% - 200px);
+  }
+  .green-circle{
+    background-color: $green;
+    @include  default-border;
+    width: 300px;
+    height: 300px;
+    left: calc(50% - 150px);
+    top: calc(50% - 150px);
+  }
+  .yellow-circle{
+    background-color: $yellow;
+    @include  default-border;
+    width: 220px;
+    height: 220px;
+    left: calc(50% - 110px);
+    top: calc(50% - 110px);
+  }
+  .red-circle{
+    background-color: $red;
+    @include  default-border;
+    width: 150px;
+    height: 150px;
+    left: calc(50% - 75px);
+    top: calc(50% - 75px);
+    span{
+      margin-top: 60px;
+    }
+  }
+}

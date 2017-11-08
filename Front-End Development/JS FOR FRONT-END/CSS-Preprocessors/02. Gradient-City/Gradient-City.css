@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#7F7E7D, #ffffff); }
+  body #wrapper {
+    background-color: white;
+    border: 3px solid #B5B5B5;
+    width: 90%;
+    margin: 0 auto;
+    color: #B5B5B5; }
+    body #wrapper header {
+      margin: 10px auto;
+      width: 90%;
+      border: 3px solid #B5B5B5; }
+      body #wrapper header h1 {
+        text-align: center;
+        color: #7F7E7D;
+        font-weight: 900; }
+      body #wrapper header nav {
+        text-align: center; }
+        body #wrapper header nav ul {
+          list-style: none; }
+          body #wrapper header nav ul li {
+            display: inline-block;
+            border: 3px solid #B5B5B5;
+            margin-right: 40px;
+            padding: 8px; }
+            body #wrapper header nav ul li:hover {
+              background: linear-gradient(#7F7E7D, #ffffff);
+              border: none; }
+              body #wrapper header nav ul li:hover a {
+                color: #ffffff; }
+            body #wrapper header nav ul li a {
+              text-decoration: none;
+              color: #B5B5B5; }
+    body #wrapper .linear {
+      border: 3px solid #B5B5B5;
+      width: 90%;
+      margin: 20px auto; }
+      body #wrapper .linear #linear {
+        border: none; }
+        body #wrapper .linear #linear h1 {
+          text-decoration: underline;
+          font-weight: 400; }
+      body #wrapper .linear article {
+        border: 1px solid #B5B5B5;
+        width: 90%;
+        margin: 10px auto; }
+        body #wrapper .linear article #horizontal, body #wrapper .linear article #diagonal, body #wrapper .linear article #vertical {
+          border: none;
+          text-align: center;
+          font-size: 12px;
+          font-weight: 100; }
+        body #wrapper .linear article .innerContainer {
+          width: 98%;
+          margin: 10px auto;
+          display: flex; }
+          body #wrapper .linear article .innerContainer div {
+            width: 17%;
+            height: 200px;
+            border-radius: 25px; }
+      body #wrapper .linear article:nth-of-type(1) .innerContainer .purple {
+        background: linear-gradient(to bottom, #552B55, white); }
+      body #wrapper .linear article:nth-of-type(1) .innerContainer .blue {
+        background: linear-gradient(to bottom, blue, white); }
+      body #wrapper .linear article:nth-of-type(1) .innerContainer .green {
+        background: linear-gradient(to bottom, green, white); }
+      body #wrapper .linear article:nth-of-type(1) .innerContainer .yellow {
+        background: linear-gradient(to bottom, yellow, white); }
+      body #wrapper .linear article:nth-of-type(1) .innerContainer .orange {
+        background: linear-gradient(to bottom, orange, white); }
+      body #wrapper .linear article:nth-of-type(1) .innerContainer .red {
+        background: linear-gradient(to bottom, red, white); }
+      body #wrapper .linear article:nth-of-type(2) .innerContainer .purple {
+        background: linear-gradient(to right, #552B55, white); }
+      body #wrapper .linear article:nth-of-type(2) .innerContainer .blue {
+        background: linear-gradient(to right, blue, white); }
+      body #wrapper .linear article:nth-of-type(2) .innerContainer .green {
+        background: linear-gradient(to right, green, white); }
+      body #wrapper .linear article:nth-of-type(2) .innerContainer .yellow {
+        background: linear-gradient(to right, yellow, white); }
+      body #wrapper .linear article:nth-of-type(2) .innerContainer .orange {
+        background: linear-gradient(to right, orange, white); }
+      body #wrapper .linear article:nth-of-type(2) .innerContainer .red {
+        background: linear-gradient(to right, red, white); }
+      body #wrapper .linear article:nth-of-type(3) .innerContainer .purple {
+        background: linear-gradient(to right bottom, #552B55, white); }
+      body #wrapper .linear article:nth-of-type(3) .innerContainer .blue {
+        background: linear-gradient(to right bottom, blue, white); }
+      body #wrapper .linear article:nth-of-type(3) .innerContainer .green {
+        background: linear-gradient(to right bottom, green, white); }
+      body #wrapper .linear article:nth-of-type(3) .innerContainer .yellow {
+        background: linear-gradient(to right bottom, yellow, white); }
+      body #wrapper .linear article:nth-of-type(3) .innerContainer .orange {
+        background: linear-gradient(to right bottom, orange, white); }
+      body #wrapper .linear article:nth-of-type(3) .innerContainer .red {
+        background: linear-gradient(to right bottom, red, white); }
+    body #wrapper .radial {
+      width: 90%;
+      margin: 20px auto;
+      border: 3px solid #B5B5B5; }
+      body #wrapper .radial #radial {
+        border: none; }
+        body #wrapper .radial #radial h1 {
+          text-decoration: underline;
+          font-weight: 400; }
+      body #wrapper .radial article {
+        width: 90%;
+        margin: 20px auto;
+        border: 1px solid #B5B5B5; }
+        body #wrapper .radial article .innerContainer {
+          width: 98%;
+          margin: 10px auto;
+          display: flex; }
+          body #wrapper .radial article .innerContainer div {
+            width: 17%;
+            height: 200px;
+            border-radius: 25px; }
+          body #wrapper .radial article .innerContainer .purple {
+            background: radial-gradient(#552B55, white); }
+          body #wrapper .radial article .innerContainer .blue {
+            background: radial-gradient(blue, white); }
+          body #wrapper .radial article .innerContainer .green {
+            background: radial-gradient(green, white); }
+          body #wrapper .radial article .innerContainer .yellow {
+            background: radial-gradient(yellow, white); }
+          body #wrapper .radial article .innerContainer .orange {
+            background: radial-gradient(orange, white); }
+          body #wrapper .radial article .innerContainer .red {
+            background: radial-gradient(red, white); }
+  body footer {
+    width: 90%;
+    margin: 20px auto;
+    border: 3px solid #B5B5B5; }
+    body footer h2 {
+      text-decoration: underline;
+      font-weight: 400;
+      text-align: center;
+      color: #7F7E7D; }
+    body footer ul {
+      text-align: center;
+      list-style: none; }
+      body footer ul li a {
+        color: #B5B5B5;
+        text-decoration: none; }
+
+/*# sourceMappingURL=Gradient-City.css.map */
