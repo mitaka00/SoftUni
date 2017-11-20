@@ -1,0 +1,23 @@
+.multiple-items{
+  width: 50%;
+  margin: 10px auto;
+}
+.multiple-items > div{
+  margin-right: 5px;
+}
+h3{
+  text-align: center;
+  &:hover{
+    color: blue;
+    cursor: pointer;
+  }
+}
+img{
+  width: 70%;
+  height: 70%;
+  margin: 0 auto;
+}
+p{
+  text-align: center;
+  vertical-align: bottom;
+}
