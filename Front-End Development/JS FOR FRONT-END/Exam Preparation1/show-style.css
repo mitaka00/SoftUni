@@ -1,0 +1,104 @@
+.container {
+    width: 100%;
+}
+
+.container>h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.location-form {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin: auto;
+    padding: 1.5em;
+}
+
+.location-form>input {
+    font-size: 1.5em;
+    width: 60%;
+}
+
+.location-form>button {
+    width: 35%;
+}
+
+.result {
+}
+
+.result .result-element {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+}
+
+.location-name {
+    text-align: center;
+    font-size: 2.75em;
+    font-weight: bold;
+}
+
+.location-coordinates {
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: bold;
+    padding-top: 1em;
+}
+
+.pokemons {
+    width: 30%;
+    margin: auto;
+    padding-top: 2em;
+}
+
+.pokemons .pokemon {
+    display: block;
+    background: #999999;
+    color: #000000;
+    padding: 0.5em;
+    margin: 0.5em auto;
+    width: 80%;
+    transition: background .3s ease;
+}
+
+.pokemons .pokemon .pokemon-title {
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+
+.pokemons .pokemon .pokemon-stats {
+    overflow: hidden;
+    display: none;
+    width: 90%;
+    margin: auto;
+    padding-top: 1em;
+}
+
+.pokemons .pokemon .pokemon-stats .pokemon-name
+, .pokemon-power
+, .pokemon-evolves-to
+, .pokemon-evolved-from {
+    font-size: 1.25em;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.2em;
+}
+
+.error {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
