@@ -1,0 +1,110 @@
+body {
+    width: 100%;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+strong {
+    font-weight: bold;
+}
+sup {
+    font-size: 0.5em;
+    vertical-align: super;
+}
+
+.title {
+    width: 90%;
+    padding: 1%;
+    margin: auto;
+    border-bottom: 5px solid #000000;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+.content>div {
+    width: 30%;
+}
+
+.continent {
+    display: block;
+    padding: 2%;
+    margin-bottom: 2%;
+    background-color: #067B82;
+    color: #F0F0F0;
+}
+
+.continent:hover {
+    font-size: 1.1em;
+}
+
+.continent-title, .title,.countries-title, .country-title {
+    text-align: center;
+}
+
+.continent-data,.continent-country {
+    display: none;
+}
+
+.countries {
+    background: #000000;
+    color: #FFFFFF;
+    border-radius: 5px;
+    width: 70%;
+    margin: 2% auto;
+}
+
+.dropdown-select {
+    width: 100%;
+    padding: 2%;
+    line-height: 14px;
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #000000; /* Fallback for IE 8 */
+}
+
+.dropdown-select > option {
+    margin: 3%;
+    padding: 3%;
+    background: #000000;
+    color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continent-data .continent-image {
+    width: 50%;
+    margin: 10% auto 0 auto;
+}
+
+.continent-data .continent-image img {
+    width: 100%;
+}
+
+.continent-country .country-data>* {
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+}
