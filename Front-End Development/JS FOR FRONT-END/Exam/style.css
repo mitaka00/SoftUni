@@ -1,0 +1,166 @@
+.body {
+    background: #F8F8F8;
+}
+
+.container {
+    width: 100%;
+}
+
+.section-divider {
+    width: 90%;
+    border-top: 2px solid black;
+}
+
+.container .navbar {
+    width: 98%;
+    /*background: #000000;*/
+    padding: 1%;
+}
+
+.container .navbar .navbar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .navbar .navbar-header .navbar-heading {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    color: #001133;
+}
+
+.container .navbar .navbar-items {
+    padding-top: 1%;
+    margin: auto;
+}
+
+.container .navbar .navbar-items .navbar-item {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    padding: 1%;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    vertical-align: top;
+    background: #ccddff;
+    cursor: pointer;
+}
+
+.container .navbar .navbar-items .navbar-item h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    color: #001133;
+}
+
+.container .content .content-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content .content-header .content-heading {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #001133;
+}
+
+.container .content .punshes {
+    width: 50%;
+    margin: auto;
+}
+
+.container .content .punshes .punsh {
+    display: inline-block;
+    width: 43%;
+    background-color: #ccddff;
+    padding: 2%;
+    margin: 1% 1%;
+    cursor: pointer;
+}
+
+.container .content .punshes .punsh h6 {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: #001133;
+}
+
+.container .content .punsh-data {
+    width: 60%;
+    margin: auto;
+    padding-top: 2%;
+}
+
+.container .content .punsh-data>* {
+    font-size: 1.5em;
+    color: #001133;
+    width: 100%;
+}
+
+.container .content .punsh-data .punsh-type {
+    padding-top: 2%;
+}
+
+.container .content .punsh-data .punsh-contents,
+.container .content .punsh-data .punsh-description {
+    padding-top: 7%;
+}
+
+.container .content .punsh-data label {
+    display: inline-block;
+    width: 25%;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.container .content .punsh-data .punsh-type h6,
+.container .content .punsh-data .punsh-contents p,
+.container .content .punsh-data .punsh-description p {
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+    margin-left: 5%;
+}
+
+.container .content .punsh-data .button-holder {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5%;
+}
+
+.container .content .punsh-data .button-holder .navbar-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    padding: 1%;
+    background: #ccddff;
+    cursor: pointer;
+}
+
+.container .content .punsh-data .button-holder .navbar-item h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    color: #001133;
+}
+
+.container .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    background-color: #ccddff;
+}
+
+.container .footer .footer-caption {
+    color: #001133;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+}
