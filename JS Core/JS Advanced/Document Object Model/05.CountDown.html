@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CountDown</title>
+</head>
+<body>
+<input type="text" id="time" style="border:3px solid blue; text-align:center; font-size:2em;" disabled="true"/>
+<script>window.onload = function() { countdown(600); }</script>
+<script>
+    function countdown(startTime) {
+        let time=startTime;
+        let input=document.getElementById('time');
+        let intervalID=setInterval(decrement,1000);
+
+        function decrement() {
+            time--;
+
+            input.value=`${Math.floor(time/60)}:${('0'+time%60).slice(-2)}`
+        }
+    }
+</script>
+</body>
+</html>

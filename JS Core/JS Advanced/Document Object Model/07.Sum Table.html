@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sum Table</title>
+</head>
+<body>
+<table>
+    <tbody>
+    <tr><th>Product</th><th>Cost</th></tr>
+    <tr><td>Beer</td>   <td>2.88</td></tr>
+    <tr><td>Fries</td>  <td>2.15</td></tr>
+    <tr><td>Burger</td> <td>4.59</td></tr>
+    <tr><td>Total:</td> <td id="sum"></td></tr>
+    </tbody>
+</table>
+<button onclick="sum()">Sum</button>
+<script>
+    function sum() {
+        let rows=document.querySelectorAll('table tr');
+        let sum=0;
+
+        for (let i = 1; i < rows.length-1; i++) {
+            let tds=rows[i].children;
+           let current=Number(tds[tds.length-1].textContent)
+
+            sum+=current
+        }
+
+        document.getElementById('sum').textContent=sum;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8"><title>Focus</title>
+    <style>.error { border: 2px solid red; }</style>
+</head>
+<body onload="validate()">
+<label for="email">Enter email:</label>
+<input id="email" type="text"/>
+<script>
+    function validate() {
+        let pattern=/[a-z]+@[a-z]+(\.[a-z]+)+/;
+
+        let input=document.getElementById('email');
+        input.addEventListener('change',function (event) {
+            if(!pattern.test(this.value)){
+                this.className='error';
+            } else {
+                input.removeAttribute('class')
+            }
+        })
+    }
+</script>
+</body>
+</html>
