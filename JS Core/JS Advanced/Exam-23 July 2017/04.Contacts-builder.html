@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts Builder</title>
+    <style>
+        article { background: #EEE; padding: 1px; width: 250px; margin: 1px; }
+        .title { background: #DDD; padding: 5px; font-weight: bold; }
+        .title button { float: right }
+        .info { margin: 5px; }
+        .info span { display: block; }
+        .online { background: #9E9; }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<div id="main"></div>
+<script>
+    class Contact{
+        constructor(name, lastname, phone, email){
+            this.firstName = name;
+            this.lastName  = lastname;
+            this.phone = phone;
+            this.email = email;
+            this.article = $(`<article><div class="title">${this.firstName} ${this.lastName}<button>&#8505;</button></div>
+             <div class="info">
+                <span>&phone; ${this.phone}</span>
+                <span>&#9993; ${this.email}</span>
+            </div>
+           </article>`);
+
+            this.online = false;
+            this.isClicked=false;
+
+        }
+        get isClicked() {
+            return this._isClicked;
+        }
+
+        set isClicked(value) {
+            $(this.article.find('.info')[0]).css("display", "none");
+            this._isClicked = value;
+            $(this.article.find("button")[0]).click(function () {
+                if(!this.isClicked){
+                    let article = $(this.parentNode.parentNode);
+
+                    $(article.find('.info')).css("display", "block");
+                    this.isClicked = true
+                }
+                else{
+                    let article = $(this.parentNode.parentNode);
+
+                    $(article.find('.info')).css("display", "none");
+                    this.isClicked = false;
+                }
+
+            })
+        }
+        get online() {
+            return this._online;
+        }
+
+        set online(value) {
+            if(value){
+                $(this.article.find(".title")).addClass('online')
+
+            }
+            else{
+                $(this.article.find(".title")).removeClass('online')
+            }
+            this._online = value;
+        }
+
+        render(id){
+            $(`#${id}`).append($(this.article))
+        }
+    }
+
+
+    let contacts = [
+        new Contact("Ivan", "Ivanov", "0888 123 456", "i.ivanov@gmail.com"),
+        new Contact("Maria", "Petrova", "0899 987 654", "mar4eto@abv.bg"),
+        new Contact("Jordan", "Kirov", "0988 456 789", "jordk@gmail.com")
+    ];
+    contacts.forEach(c => c.render('main'));
+    setTimeout(() => contacts[1].online = true, 2000);
+    setTimeout(() => contacts[1].online = false, 4000);
+</script>
+</body>
+</html>
