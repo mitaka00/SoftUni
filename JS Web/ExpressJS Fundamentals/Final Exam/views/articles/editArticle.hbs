@@ -1,0 +1,21 @@
+                <section>
+                    <h2>Edit article
+                        <div class="controls">
+                            {{#eq currentUser.username "admin"}}
+                            <a href="/articles/lock/{{article._id}}">Lock article</a>
+                            <a href="/articles/unlock/{{article._id}}">Unlock article</a>
+                            {{/eq}}
+                        </div>
+                    </h2>
+                    <div class="spacer">
+                        <form action="/articles/editArticle/{{article._id}}" method="POST">
+                            <label>Article title</label>
+                            <h3>{{article.title}}</h3>
+                            <label>Content</label>
+                            <textarea name="content">
+                                {{lastEdit.content}}
+                            </textarea>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </section>

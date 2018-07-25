@@ -1,0 +1,8 @@
+<h1>Here are your books</h1>
+    <div class="container">
+        {{#each books}}
+        <div class="book">
+            <a href="/details/{{_id}}"><img class="bookPoster" src="{{poster}}" /></a>
+        </div>
+        {{/each}}
+    </div>

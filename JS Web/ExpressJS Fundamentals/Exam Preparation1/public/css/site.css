@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: #e0d9c5
+}
+
+footer {
+    text-align: center;
+    background: #f3c1a4;
+    padding: 1em;
+}
+
+header {
+    background: #f3c1a4;
+    padding-left: 1em; 
+    padding-right: 1em;
+    position: relative;    
+}
+
+.logo {
+    font-size: 2em;
+    font-style: italic;
+    margin-left: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+}
+
+.menu {
+    display: block;
+}
+
+.menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5em 2em;
+    margin: 0.25em;
+    background: #ffdc68;
+    border-radius: 1em;
+}
+
+.button:hover {
+    background: #5a4e26;
+    color: white;
+}
+
+.greeting {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+
+main {
+    padding: 2em;
+}
+
+.products {
+    text-align: center;
+    padding: 2em;
+}
+
+.product-card {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    background: #f3c1a4;
+    margin: 1em;
+    padding: 0.25em;
+}
+
+.product-title {
+    display: inline-block;
+}
+
+.catalog {
+    overflow: auto;
+}
+
+.column {
+    float: left;
+    padding: 1em;
+}
+
+.order {
+    position: relative;
+    vertical-align: middle;
+    height: 3em;
+}
+
+.order>span {
+    line-height: 3em;
+}
+
+.order-time {
+    margin-right: 1em;
+}
+
+.order-status {
+    position: absolute;
+    right: 150px;
+}
+
+.order-button {   
+    position: absolute;
+    right: 0;
+}
+
+.status {
+    text-align: center;
+    clear: both;
+    vertical-align: middle;
+}
+
+.status-block {
+    display: inline-block;
+    width: 20%;
+    position: relative;
+    height: 4em;
+}
+
+.checkpoint {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: #f3c1a4;
+    border: 5px solid #ffdc68;
+    border-radius: 1em;
+}
+
+.current {
+    background: white;
+    border-color: #5a4e26;
+}
+
+.progress-left {
+    position: absolute;
+    top: 0.5em;
+    right: 60%;
+    display: inline-block;
+    width: 40%;
+    height: 0;
+    border: 5px solid #ffdc68;
+}
+
+.progress-right {
+    position: absolute;
+    top: 0.5em;
+    left: 60%;
+    display: inline-block;
+    width: 40%;
+    height: 0;
+    border: 5px solid #ffdc68;
+}
+
+.control {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+    padding: 0.5em;
+    margin: 0.25em;
+    background: #ffdc68;
+    border-radius: 1em;
+}
+
+.control:hover {
+    background: #5a4e26;
+    color: white;
+}
+
+.control-img {
+	width: 16px;
+	height: 16px;
+}
+.success{
+    width: 100%;
+    height: 50px;
+    background-color: green;
+}
+
+.error{
+    width: 100%;
+    height: 50px;
+    background-color: red;
+}

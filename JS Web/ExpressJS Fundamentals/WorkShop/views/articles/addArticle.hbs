@@ -1,0 +1,19 @@
+<h1>Add New Book</h1>
+    {{#if err}}
+    <div id="errBox"><h2 id="errMsg">Please fill all fields</h2></div>
+    {{/if}}
+    <div id="succssesBox" style="display: none"><h2 id="succssesMsg">Book Added</h2></div>
+    <div class="container">
+        <form action="/articles/addArticle" method="POST" enctype="multipart/form-data" >
+            <label for="bookTitle">Title</label>
+            <input type="text"  id="bookTitle" name="title" placeholder="The title of the book">
+
+            <label for="bookPoster">Poster URL</label>
+            <input type="file" accept=".jpg, .jpeg, .png" id="bookPoster" name="imagePath" placeholder="Link to a poster">
+
+            <label for="desc">Book description</label>
+            <input type="text" id="desc" name="description" placeholder="Book description">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>

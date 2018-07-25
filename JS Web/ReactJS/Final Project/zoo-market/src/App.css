@@ -1,0 +1,396 @@
+.App{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: relative;
+  top: 0;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/**Footer*/
+footer{
+  position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:  #222222;;
+    color:lightgrey;
+    font-size: 25px;
+    text-align: center;
+    height: 80px;;
+}
+footer span{
+  float: right;
+  margin-top: 40px;
+  margin-right: 100px;
+}
+
+footer img{
+  text-align: center;
+  margin-left: 550px;
+}
+
+/**Register and Login*/
+.startingPage{
+  height: 700px;
+  background-color:#FFDA31;
+  margin:0;
+  padding: 0;
+}
+.startingPage h1{
+  text-shadow: 0px 0px 10px rgba(255,255,255,0.6), 0px 0px 30px rgba(255,255,255,0.4), 0px 0px 50px rgba(255,255,255,0.3), 0px 0px 180px rgba(255,255,255,0.3);
+  color:black;
+  text-align: center;
+	font: 80px 'ChunkFiveRegular';
+}
+
+.app-emblem{
+  display: inline-block;
+  height: 100px;
+}
+
+.startingPage h4{
+  text-shadow: 0px 0px 10px rgba(255,255,255,0.6), 0px 0px 30px rgba(255,255,255,0.4), 0px 0px 50px rgba(255,255,255,0.3), 0px 0px 180px rgba(255,255,255,0.3);
+  color:black;
+  text-align: center;
+	font: 30px 'ChunkFiveRegular';
+}
+
+.startingPage h3{
+  text-shadow: 0px 0px 10px rgba(255,255,255,0.6), 0px 0px 30px rgba(255,255,255,0.4), 0px 0px 50px rgba(255,255,255,0.3), 0px 0px 180px rgba(255,255,255,0.3);
+  color:black;
+  text-align: center;
+  font: 40px 'ChunkFiveRegular';
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.startingAuth{
+  display: block;
+  width: 100%;
+}
+#registerForm{
+  width: 38%;
+  display: inline-block;
+  text-align: center;
+  float: right;
+  height: 300px;
+  background-color: #90D4D4;
+  margin-right: 150px;
+  border-radius: 20px;
+}
+
+#loginForm{
+  width: 38%;
+  display: inline-block;
+  text-align: center;
+  float: left;
+  vertical-align: top;
+  height: 300px;
+  background-color: #90D4D4;
+  margin-left: 150px;
+  border-radius: 20px;
+}
+
+.inputDiv{
+  width: 60%;
+  margin: 10px auto;
+}
+
+.authForm h2{
+  font-size: 40px;
+  color:black;
+  font-weight: 300;
+}
+
+.inputDiv > label{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  width: 40%;
+}
+
+.authForm input{
+  width: 40%;
+}
+
+.btnAuth{
+  margin-top: 20px;
+  display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #f7f7f7;
+    border-left: solid 6px #ff7c5c;
+    color: #ff7c5c;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+}
+
+.btnAuth:hover{
+  cursor: pointer;
+  box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+    transform: translateY(2px);
+}
+
+/**Navbar*/
+nav{
+  width: 100%;
+  padding-top: 30px;
+  text-align: center;
+  background-color:#FFDA31;
+  height: 60px;
+}
+.navLink{
+  margin: 15px;
+  font-size: 20px;
+}
+.navLink:hover{
+  font-size: 21px;
+}
+#logoutBtn{
+  float: right;
+  position: absolute;
+  margin-left: 700px;
+  background-color: #93291b; border: 1px solid #333333; border-radius: 3px 3px 3px 3px; box-shadow: 0 0 1px #93291b inset; color: #f5f5f5; padding: 5px; 
+}
+#logoutBtn:hover{
+  font-size: 20px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+span.navLink{
+  float: right;
+  position: absolute;
+  margin-left: 570px;
+  margin-top: 0;
+}
+
+
+/**Message Box*/
+.loading{
+  background-color: lightskyblue;
+  border-radius: 20px;
+}
+
+.error{
+ background-color: red;
+ border-radius: 20px;
+}
+
+/**Post*/
+.postsContainer{
+  margin-bottom: 125px;
+  width: 100%;
+}
+.postContainer{
+  display: inline-block;
+  width: 30%;
+  height: 600px;
+  vertical-align: top;
+  margin-left: 2.5%;
+  margin-top: 30px;
+  border: 3px solid #FFDA31;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+.postContainer h3{
+  color: #7c795d; font-family: 'Trocchi', serif; font-size: 30px; font-weight: normal; line-height: 48px; margin: 0;
+  text-transform: uppercase;
+}
+.postContainer img{
+  width: 80%;
+  height: 250px;
+  display: block;
+  margin-left: 10%;
+}
+
+.postContainer > .price{
+  color: #7c795d; font-family: 'Trocchi', serif; font-size: 20px; font-weight: normal; line-height: 48px; margin: 0;
+}
+
+.postContainer > .description{
+  width: 80%;
+  margin-left: 10%;
+  height: 100px;
+  border: 1px dashed grey;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+  border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+  border-image: none;
+  border-radius: 6px 6px 6px 6px;
+  border-style: none solid solid none;
+  border-width: medium 1px 1px medium;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+  color: #555555;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1em;
+  line-height: 1.4em;
+  padding: 5px 8px;
+  transition: background-color 0.2s ease 0s;
+}
+
+.postContainer > .postAuthor{
+  position: absolute;
+  right:0px;
+  bottom: 0;
+  font-style: italic; color: #B6B6B6; font-size: 24px; margin-top: 20px; text-align: center; text-shadow: 0 1px 1px #fff;
+}
+
+.profileTitle{
+  text-transform: uppercase;
+  color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 40px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center;
+  margin-bottom: 0px;
+  margin-top: 35px;
+}
+
+.detailsBtn{
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #fd9535;/*button color*/
+  border-bottom: solid 2px #d27d00;/*daker color*/
+  border-radius: 4px;
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+  margin-top: 5px;
+  font-weight: bold;
+}
+.detailsBtn:active{
+    border-bottom: solid 2px #fd9535;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+/** Add Post */
+.postForm{
+  width: 40%;
+  margin: 30px auto;
+  height: 400px;
+}
+
+.postForm label{
+  width: 30%;
+}
+.postForm input{
+  width: 60%;
+  float: right;
+  height: 20px;;
+}
+.postForm select{
+  width: 60%;
+  margin-left: 28px;
+  height: 25px;;
+}
+
+.postForm textarea{
+  width: 60%;
+  float: right;
+  height: 150px;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+  border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+  border-image: none;
+  border-radius: 6px 6px 6px 6px;
+  border-style: none solid solid none;
+  border-width: medium 1px 1px medium;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+  color: #555555;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1em;
+  line-height: 1.4em;
+  transition: background-color 0.2s ease 0s;
+}
+
+.areaDiv{
+  height: 150px;
+  width: 60%;
+  margin: 10px auto;
+}
+.areaDiv label{
+  margin-left: 17px;
+}
+.postForm  .postBtn:hover{
+  cursor: pointer;
+}
+
+.postForm  .postBtn{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #FFF;
+    background-image: -webkit-linear-gradient(45deg, #709dff 0%, #b0c9ff 100%);
+    background-image: linear-gradient(45deg, #709dff 0%, #b0c9ff 100%);
+    transition: .4s;
+    height: 30px;
+    width:  100px;
+}
+
+#deleteBtn{
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #FFF;
+  background-image: -webkit-linear-gradient(45deg, #cc0000 0%, #ff3300 100%);
+  background-image: linear-gradient(45deg, #cc0000 0%, #ff3300 100%);
+  transition: .4s;
+  height: 30px;
+  width:  100px;
+  float: right;
+}
+
+#deleteBtn:hover{
+  cursor: pointer;
+}
+
+#cancelBtn{
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #FFF;
+  transition: .4s;
+  height: 13px;
+  width:  50px;
+  float: right;
+  background-color:  #333333;
+}
+#cancelBtn:hover{
+  cursor: pointer;
+}
+
+#notFound{
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+	color: #9c8468;
+	opacity: 0.3;
+  font: 80px 'Museo700';
+  text-align: center;
+}
+
+.nav-logo{
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+  top: 10;
+  left: 35px;
+}

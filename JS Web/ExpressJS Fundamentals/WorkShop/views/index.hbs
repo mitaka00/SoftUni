@@ -1,0 +1,12 @@
+<h1>Hi, Welcome</h1>
+<div>
+{{#each articles}}
+    <div>
+        <span>Title: {{title}}</span>
+        <a href="/articles/details/{{_id}}"><img src="{{imageForHbs}}" /></a>
+        {{#if description}}
+        <div> Description: {{description}} </div>
+        {{/if}}
+    </div>
+{{/each}}
+</div>

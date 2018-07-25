@@ -1,0 +1,23 @@
+    <h1>Add New Book</h1>
+    {{#if err}}
+    <div id="errBox"><h2 id="errMsg">Please fill all fields</h2></div>
+    {{/if}}
+    <div id="succssesBox" style="display: none"><h2 id="succssesMsg">Book Added</h2></div>
+    <div class="container">
+        <form action="/addBook" method="POST">
+            <label for="bookTitle">Title</label>
+            <input type="text" id="bookTitle" name="title" placeholder="The title of the book">
+
+            <label for="bookYear">Year</label>
+            <input type="date" id="bookYear" name="year" placeholder="Year of release">
+
+            <label for="bookPoster">Poster URL</label>
+            <input type="text" id="bookPoster" name="poster" placeholder="Link to a poster">
+
+            <label for="bookAuthor">Book author</label>
+            <input type="text" id="bookAuthor" name="author" placeholder="Book author">
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>

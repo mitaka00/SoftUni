@@ -1,0 +1,8 @@
+                <div class="product-card">
+					<img src="{{imageUrl}}">
+                    {{#eq currentUser.username 'Admin'}}
+					<a href="#" class="control"><img class="control-img" src="../../public/img//edit.png"></a>
+					<a href="#" class="control"><img class="control-img" src="../../public/img/delete.png"></a>
+                    {{/eq}}
+                    <a href="customize-order.html" class="button product-title">Order</a>
+				</div>

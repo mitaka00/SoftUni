@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Cool Blog System</title>
+  <link href="/css/site.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+     <header>
+       {{#if error}}
+        <div class="error">{{message}}</div>
+        {{/if}}
+        {{#if message}}
+        <div class="success">{{message}}</div>
+        {{/if}}
+            <span class="logo">Doner  Place</span>
+            {{#if currentUser}}
+            <form id="logout-form" action="/users/logout" method="POST"></form>
+            <span class="greeting">Welcome, {{currentUser.username}}! | <a href="javascript:document.getElementById('logout-form').submit()">[logout]</a></span>
+            {{/if}}
+            <ul class="menu">
+              {{#if currentUser}}
+				        <li><a class="button" href="/">Home</a></li>
+                <li><a class="button" href="order-status">Order Status</a></li>
+                {{#eq currentUser.username "Admin"}}
+                	<li><a class="button" href="#">All Orders</a></li>
+				          <li><a class="button" href="/products/create-product">Create Product</a></li>
+                {{/eq}}
+              {{else}}
+                <li><a class="button" href="/users/login">Login</a></li>
+                <li><a class="button" href="/users/register">Register</a></li>
+              {{/if}}
+            </ul>
+        </header>
+      <main>
+        {{#if globalError}}
+        <h3>{{globalError}}</h3>
+        {{/if}}
+        {{{body}}}
+      </main>
+      <footer>Doner Place &copy; 2017</footer>
+</body>
+</html>
