@@ -1,0 +1,8 @@
+.col-xs-12{
+    margin: 0 auto;
+    text-align: center
+}
+#description{
+    height: 200px;
+    margin-top: 30px;
+}

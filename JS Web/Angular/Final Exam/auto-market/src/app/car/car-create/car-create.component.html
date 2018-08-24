@@ -1,0 +1,54 @@
+<h1>Create Car</h1>
+<div class="row">
+    <form #f="ngForm" (ngSubmit)="create()" class="carForm">
+      <div class="row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              required
+              type="text"
+              id="name"
+              name="name"
+              [(ngModel)]="bindingModel.name"
+              class="form-control">
+          </div>
+      </div>
+      <div class="row">
+          <div class="form-group">
+            <label for="imagePath">Image URL</label>
+            <input
+              required
+              type="text"
+              id="imagePath"
+              name="imagePath"
+              [(ngModel)]="bindingModel.imagePath"
+              class="form-control">
+          </div>
+      </div>
+      <div class="row">
+          <div class="form-group">
+            <label for="price">Price</label>
+            <input
+              required
+              type="number"
+              id="price"
+              name="price"
+              [(ngModel)]="bindingModel.price"
+              class="form-control">
+          </div>
+      </div>
+      <div class="row"> 
+          <div class="form-group">
+            <label for="description">Description</label>
+            <textarea
+              type="text"
+              id="description"
+              class="form-control"
+              name="description"
+              [(ngModel)]="bindingModel.description"
+              rows="6"></textarea>
+          </div>
+      </div>
+     <button class="btn btn-primary" [disabled]="f.invalid" type="submit">Create</button>
+    </form>
+</div>

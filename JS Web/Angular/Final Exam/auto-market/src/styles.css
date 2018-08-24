@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+h1{
+    color: #b48608; font-family: 'Droid serif', serif; font-size: 36px; font-weight: 400; font-style: italic; line-height: 44px; margin: 0 0 12px; text-align: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+.fa{
+    font-size: 20px; 
+}
+.fa:hover{
+    cursor: pointer;
+    font-size: 25px;
+    color: #FFC107
+}
+.carContainer{
+    width: 30%;
+    margin-left: 6%;
+    margin-top: 30px;
+    height: 350px;
+    background-color:#B58900;
+    color:white;
+    /*#f4be41**/
+}
+.carForm{
+    margin: 10px auto;
+    width: 30%;
+    text-align: center;
+}
+.carForm .form-group{
+    margin: 0 auto;
+}
+
+.carForm textarea{
+    width: 400px;
+    margin-bottom: 5px;
+}
+button{
+    margin-right: 2px;
+}
+button:hover{
+    cursor: pointer;
+}

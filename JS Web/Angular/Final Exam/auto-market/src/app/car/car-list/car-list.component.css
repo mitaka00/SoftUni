@@ -1,0 +1,9 @@
+img{
+    width: 280px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+#searchedName{
+    width: 15%;
+    margin: 0 auto;
+}

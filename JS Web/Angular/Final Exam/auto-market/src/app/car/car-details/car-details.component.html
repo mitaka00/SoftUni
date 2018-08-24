@@ -1,0 +1,35 @@
+<h1>Details</h1>
+<div *ngIf="car" class="mx-auto w-50">
+  <div  class="row">
+    <div class="col-xs-12 row">
+      <img
+        src="{{car.imagePath}}"
+        alt="{{car.name}}"
+        class="img-responsive"
+        style="max-height: 300px;">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>{{car.name}}</h3>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-xs-12">
+        <h3>{{car.price}}lv</h3>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col-xs-12">
+        <button *ngIf='authService.isAdmin()' class="btn-danger"><a routerLink="/cars/delete/{{car._id}}" class="text-white">Delete</a></button>
+        <button *ngIf='authService.isAdmin()' class="btn-warning"><a routerLink="/cars/edit/{{car._id}}" class="text-white">Edit</a></button>
+        <button class="btn-dark"><a routerLink="/cars/list" class="text-white">Cancel</a></button>  
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12" id="description">
+      {{car.description}}
+    </div>
+  </div>
+  
+</div>

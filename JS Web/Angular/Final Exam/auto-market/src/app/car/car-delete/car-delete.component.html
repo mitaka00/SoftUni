@@ -1,0 +1,72 @@
+<h1>Delete</h1>
+<div *ngIf="bindingModel" class="mx-auto  w-50">
+    <div class="row">
+      <div class="col-xs-12">
+        <form #f="ngForm" (ngSubmit)="delete()" >
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  required
+                  disabled='true'
+                  type="text"
+                  id="name"
+                  [(ngModel)]="bindingModel.name"
+                  name="name"
+                  class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-xs-12">
+                <div class="form-group">
+                  <label for="name">Price</label>
+                  <input
+                    required
+                    disabled='true'
+                    type="number"
+                    id="price"
+                    [(ngModel)]="bindingModel.price"
+                    name="price"
+                    class="form-control">
+                </div>
+              </div>
+            </div>
+          <div class="row mx-auto text-center">
+            <div class="col-xs-12">
+              <div class="form-group">
+                <label for="imagePath">Image URL</label>
+                <input
+                  required
+                  disabled='true'
+                  type="text"
+                  id="imagePath"
+                  [(ngModel)]="bindingModel.imagePath"
+                  name="imagePath"
+                  class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="form-group">
+                <textarea
+                  required
+                  disabled='true'
+                  type="text"
+                  id="description"
+                  class="form-control"
+                  [(ngModel)]="bindingModel.description"
+                  name="description"
+                  rows="6"></textarea>
+              </div>
+            </div>
+          </div>
+          <button class="btn-danger"><a (click)="delete()" class="text-white">Delete</a></button>
+          <button class="btn-dark"><a routerLink="/cars/list" class="text-white">Cancel</a></button>  
+        </form>
+      </div>
+    </div>
+    
+  </div>

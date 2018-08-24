@@ -1,0 +1,38 @@
+<h1>Auto Market</h1>
+<div class="mx-auto">
+    <form #f="ngForm" (ngSubmit)="search()">
+            <div class="form-group">
+              <input
+                type="text"
+                id="searchedName"
+                name="searchedName"
+                [(ngModel)]="searchedName"
+                class="form-control"
+                placeholder="Write make or model">
+            </div>
+       <button class="btn btn-primary" type="submit">Search</button>
+      </form>
+  </div>
+<div class="row mx-auto">
+  <div *ngFor="let car of cars" class="col-md-3 col-sm-10 text-center carContainer">
+      <div class="mx-auto">
+        <h4 class="list-group-item-heading">{{car.name}}</h4>
+        <p class="list-group-item-text">{{car.price}}lv</p>
+        <p class="list-group-item-text" style="max-height: 200px;">{{showDescription(car)}}&hellip;</p>
+      </div>
+      <span class="mx-auto d-block">
+            <img
+              src="{{car.imagePath}}"
+              alt="{{car.name}}"
+              class="img-responsive"
+              >
+       </span>
+       <button class="btn-info"><a routerLink="/cars/details/{{car._id}}" class="text-white">Details</a></button>
+       <button *ngIf='authService.isAdmin()' class="btn-danger"><a routerLink="/cars/delete/{{car._id}}" class="text-white">Delete</a></button>
+       <button *ngIf='authService.isAdmin()' class="btn-warning"><a routerLink="/cars/edit/{{car._id}}" class="text-white">Edit</a></button>
+       <span *ngIf='authService.isAuthenticated()'>
+        <i *ngIf='showStar(car)' class="fa fa-star  text-warning" aria-hidden="true" (click)="clickStar(car._id)"></i>
+        <i *ngIf='!showStar(car)' class="fa fa-star" aria-hidden="true" (click)="clickStar(car._id)"></i>
+       </span>
+  </div>
+</div>

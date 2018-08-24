@@ -1,0 +1,21 @@
+<h1>{{authService.username}} favourites</h1>
+<div class="row mx-auto">
+  <div *ngFor="let favourite of favourites" class="col-md-3 col-sm-10 text-center list-group-item clearfix carContainer">
+      <div class="mx-auto">
+        <h4 class="list-group-item-heading">{{favourite.name}}</h4>
+        <p class="list-group-item-text">{{favourite.price}}lv</p>
+        <p class="list-group-item-text">{{favourite.description}}</p>
+      </div>
+      <span class="mx-auto d-block">
+            <img
+              src="{{favourite.imagePath}}"
+              alt="{{favourite.name}}"
+              class="img-responsive"
+              style="max-height: 100px;">
+       </span>
+       <button class="btn-info"><a routerLink="/cars/details/{{favourite._id}}" class="text-white">Details</a></button>
+       <button *ngIf='authService.isAdmin()' class="btn-danger"><a routerLink="/cars/delete/{{favourite._id}}" class="text-white">Delete</a></button>
+       <button *ngIf='authService.isAdmin()' class="btn-warning"><a routerLink="/cars/edit/{{favourite._id}}" class="text-white">Edit</a></button>
+       <i class="fa fa-star  text-warning" aria-hidden="true" (click)="remove(favourite)"></i>
+  </div>
+</div>

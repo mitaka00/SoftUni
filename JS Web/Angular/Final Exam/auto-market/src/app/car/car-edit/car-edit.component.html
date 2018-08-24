@@ -1,0 +1,58 @@
+<h1>Edit Car</h1>
+<div *ngIf="bindingModel" class="mx-auto w-50">
+    <div class="row">
+        <form #f="ngForm" (ngSubmit)="edit()" class="carForm">
+          <div class="row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  required
+                  type="text"
+                  id="name"
+                  [(ngModel)]="bindingModel.name"
+                  name="name"
+                  class="form-control">
+              </div>
+          </div>
+          <div class="row">
+                <div class="form-group">
+                  <label for="name">Price</label>
+                  <input
+                    required
+                    type="number"
+                    id="price"
+                    [(ngModel)]="bindingModel.price"
+                    name="price"
+                    class="form-control">
+                </div>
+            </div>
+          <div class="row">
+              <div class="form-group">
+                <label for="imagePath">Image URL</label>
+                <input
+                  required
+                  type="text"
+                  id="imagePath"
+                  [(ngModel)]="bindingModel.imagePath"
+                  name="imagePath"
+                  class="form-control">
+              </div>
+          </div>
+          <div class="row">
+              <div class="form-group" id="descContainer">
+                <label for="description">Description</label>
+                <textarea
+                  required
+                  type="text"
+                  id="description"
+                  class="form-control"
+                  [(ngModel)]="bindingModel.description"
+                  name="description"
+                  rows="6"></textarea>
+              </div>
+          </div>
+         <button class="btn-primary" [disabled]="f.invalid" type="submit">Edit</button>
+         <button class="btn-dark"><a routerLink="/cars/list" class="text-white">Cancel</a></button> 
+        </form>
+      </div>
+    </div>

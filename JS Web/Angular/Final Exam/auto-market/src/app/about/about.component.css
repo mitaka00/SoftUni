@@ -1,0 +1,25 @@
+img{
+    height: 300px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+h1{
+    margin-top: 50px;
+    color: #b48608; font-family: 'Droid serif', serif; font-size: 36px; font-weight: 400; font-style: italic; line-height: 44px; margin: 0 0 12px; text-align: center;
+    display: block;
+    text-align: center
+}
+section{
+    width: 40%;
+    text-align: center;
+    height: 220px;
+}
+.left{
+    float: left;
+    margin-left: 40px;
+}
+.right{
+    float: right;
+    margin-right: 40px;
+}

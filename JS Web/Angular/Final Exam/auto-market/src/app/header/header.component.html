@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" routerLink="/cars/list">Auto Market</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+            <li *ngIf="!authService.isAuthenticated()" class="nav-item">
+              <a class="nav-link"  routerLink="/auth/login">Login</a>
+            </li>
+            <li *ngIf="!authService.isAuthenticated()" class="nav-item">
+              <a class="nav-link" routerLink="/auth/register">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  routerLink="/about">About</a>
+            </li>
+            <li *ngIf="!authService.isAuthenticated()" class="nav-item">
+              <a class="nav-link "  routerLink="/cars/list">Car List</a>
+            </li>
+        <li *ngIf="authService.isAuthenticated()" (click)="expand()" [class]="dropdownLi">
+          <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown"
+           aria-haspopup="true" aria-expanded="false">Cars</a>
+            <div [class]="dropdownMenu" aria-labelledby="dropdown01">
+             <a class="dropdown-item" routerLink="/cars/list">List Cars</a>
+             <a *ngIf="authService.isAdmin()" class="dropdown-item" routerLink="/cars/create">Create</a>
+             <a class="dropdown-item" routerLink="/cars/favourites/{{authService.username}}">Favourites</a>
+            </div>
+        </li>
+        <li *ngIf="authService.isAuthenticated()" class="nav-item">
+          <a class="nav-link" (click)="logout()">Logout</a>
+        </li>
+      </ul>
+      <div *ngIf="authService.username" class="navbar-brand">Hello, {{authService.username}}</div>
+    </div>
+  </nav>
