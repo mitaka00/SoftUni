@@ -1,2 +1,2 @@
 # SoftUni
-Exercesies
+Exercesies and Projects
